@@ -9,4 +9,13 @@
         <property name="name" value="Ali"/>
         <property name="surname" value="Aliev"/>
     </bean>
+    <bean id="assistant" class="org.example.Assistant">
+        <property name="name" value="Yordamchi"/>
+        <property name="surname" value="Yordamchiyev"/>
+    </bean>
+    <bean id="lesson" class="org.example.Lesson">
+        <property name="name" value="Java"/>
+        <property name="professor" ref="professor"/>
+        <property name="assistant" ref="assistant"/>
+    </bean>
 </beans>
